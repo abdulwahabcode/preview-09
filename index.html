@@ -34,8 +34,9 @@
   .hero{background:radial-gradient(1200px 600px at 80% -10%,rgba(184,157,71,.14),transparent),linear-gradient(160deg,var(--green) 0%,var(--green-deep) 100%);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
   .hero-grid{display:grid;gap:40px}
   @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}}
+  @media(max-width:899px){.hero-br{display:none}.hero-grid>div:first-child{text-align:center}.hero p.sub{margin-left:auto;margin-right:auto}.trust{justify-content:center}}
   .eyebrow{display:inline-block;background:rgba(184,157,71,.14);border:1px solid rgba(184,157,71,.45);color:var(--amber);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border-radius:100px;margin-bottom:18px}
-  .hero h1{font-size:clamp(32px,5.5vw,54px);line-height:1.08;font-weight:900;letter-spacing:-1px;margin-bottom:16px}
+  .hero h1{font-size:clamp(30px,5.2vw,56px);line-height:1.1;font-weight:900;letter-spacing:-1px;margin-bottom:16px;text-wrap:balance}
   .hero h1 span{color:var(--amber)}
   .hero p.sub{color:#D8E2DC;font-size:17px;max-width:480px;margin-bottom:26px}
   .trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
@@ -214,7 +215,7 @@
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">We buy houses for cash</span>
-      <h1>Sell Your House Fast.<br><span>Get a Fair Cash Offer in 24 Hours.</span></h1>
+      <h1>Sell Your House Fast.<br class="hero-br"><span>Get a Fair Cash Offer in 24 Hours.</span></h1>
       <p class="sub">No repairs. No fees. No waiting months for a buyer. We buy as-is in Arizona, Florida, Tennessee, North Carolina — and nationwide. Close in as little as 7 days.</p>
       <div class="trust">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></svg> Any condition</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></svg> $0 fees</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></svg> Close in 7 days</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></svg> No agents, no fees</span>
